@@ -27,8 +27,8 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg">
-                      <Mail className="w-5 h-5 text-primary" />
+                    <div className="gradient-bg p-3 rounded-lg">
+                      <Mail className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white">Email</h3>
@@ -37,8 +37,8 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg">
-                      <MapPin className="w-5 h-5 text-primary" />
+                    <div className="gradient-bg p-3 rounded-lg">
+                      <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white">Location</h3>
@@ -48,8 +48,8 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <div className="bg-primary/20 p-3 rounded-lg">
-                      <Phone className="w-5 h-5 text-primary" />
+                    <div className="gradient-bg p-3 rounded-lg">
+                      <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white">Office</h3>

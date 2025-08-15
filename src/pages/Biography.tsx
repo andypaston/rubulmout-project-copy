@@ -22,13 +22,15 @@ const Biography = () => {
           <div className="space-y-8">
             <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <GraduationCap className="w-6 h-6 text-primary" />
+                <div className="gradient-icon">
+                  <GraduationCap className="w-6 h-6" />
+                </div>
                 Academic Background
               </h2>
               <div className="space-y-4 text-white/80">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/20 p-2 rounded-lg">
-                    <Calendar className="w-4 h-4 text-primary" />
+                  <div className="gradient-bg p-2 rounded-lg">
+                    <Calendar className="w-4 h-4 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Research Fellow</h3>
@@ -42,7 +44,9 @@ const Biography = () => {
 
             <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <Briefcase className="w-6 h-6 text-primary" />
+                <div className="gradient-icon">
+                  <Briefcase className="w-6 h-6" />
+                </div>
                 Research Expertise
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -72,7 +76,9 @@ const Biography = () => {
 
             <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <MapPin className="w-6 h-6 text-primary" />
+                <div className="gradient-icon">
+                  <MapPin className="w-6 h-6" />
+                </div>
                 Community Impact
               </h2>
               <p className="text-white/70 leading-relaxed mb-4">

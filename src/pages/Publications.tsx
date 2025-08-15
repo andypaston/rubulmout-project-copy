@@ -85,18 +85,24 @@ const Publications = () => {
 
           {/* Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
-              <BookOpen className="w-12 h-12 mx-auto mb-4 text-primary" />
+            <Card className="glass border-primary/20 p-6 text-center section-glow">
+              <div className="gradient-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <BookOpen className="w-12 h-12" />
+              </div>
               <h3 className="text-3xl font-bold text-white mb-2">40+</h3>
               <p className="text-white/70">Research Articles</p>
             </Card>
-            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
-              <Award className="w-12 h-12 mx-auto mb-4 text-primary" />
+            <Card className="glass border-primary/20 p-6 text-center section-glow">
+              <div className="gradient-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <Award className="w-12 h-12" />
+              </div>
               <h3 className="text-3xl font-bold text-white mb-2">2</h3>
               <p className="text-white/70">Bestselling Books</p>
             </Card>
-            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
-              <Calendar className="w-12 h-12 mx-auto mb-4 text-primary" />
+            <Card className="glass border-primary/20 p-6 text-center section-glow">
+              <div className="gradient-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <Calendar className="w-12 h-12" />
+              </div>
               <h3 className="text-3xl font-bold text-white mb-2">50,000+</h3>
               <p className="text-white/70">Books Sold</p>
             </Card>
@@ -111,11 +117,11 @@ const Publications = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="flex-1">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="bg-primary/20 p-3 rounded-lg">
+                      <div className="gradient-bg p-3 rounded-lg">
                         {pub.type === "Book" ? (
-                          <BookOpen className="w-6 h-6 text-primary" />
+                          <BookOpen className="w-6 h-6 text-white" />
                         ) : (
-                          <Award className="w-6 h-6 text-primary" />
+                          <Award className="w-6 h-6 text-white" />
                         )}
                       </div>
                       <div className="flex-1">

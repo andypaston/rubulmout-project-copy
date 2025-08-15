@@ -73,6 +73,22 @@
     background-clip: text;
   }
 
+  /* Gradient icons and highlights */
+  .gradient-icon {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-border {
+    border-image: linear-gradient(135deg, #FF0F7B 0%, #EDB753 75%, #EDD153 100%) 1;
+  }
+
   /* Glass morphism effect with new colors */
   .glass {
     background: rgba(0, 0, 0, 0.3);

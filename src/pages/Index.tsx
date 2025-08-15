@@ -111,7 +111,9 @@ const Index = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="glass p-8 md:p-12 rounded-2xl border border-primary/20 section-glow">{/* Updated border */}
-            <Beaker className="w-16 h-16 mx-auto mb-6 text-primary" />
+            <div className="gradient-icon w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+              <Beaker className="w-16 h-16" />
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Interested in Collaboration?
             </h2>

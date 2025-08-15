@@ -19,9 +19,11 @@ const Teaching = () => {
           </div>
 
           {/* Teaching Philosophy */}
-          <Card className="glass border-primary/20 p-8 mb-12 section-glow">{/* Updated border */}
+          <Card className="glass border-primary/20 p-8 mb-12 section-glow">
             <div className="text-center">
-              <Target className="w-16 h-16 mx-auto mb-6 text-primary" />
+              <div className="gradient-icon w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <Target className="w-16 h-16" />
+              </div>
               <h2 className="text-3xl font-bold text-white mb-6">Teaching Philosophy</h2>
               <p className="text-xl text-white/70 leading-relaxed max-w-4xl mx-auto">
                 I believe that science education should be accessible, engaging, and rooted in real-world applications. 
@@ -35,7 +37,9 @@ const Teaching = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <Users className="w-6 h-6 text-primary" />
+                <div className="gradient-icon">
+                  <Users className="w-6 h-6" />
+                </div>
                 Academic Teaching
               </h3>
               <div className="space-y-6">
@@ -58,7 +62,9 @@ const Teaching = () => {
 
             <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <BookOpen className="w-6 h-6 text-primary" />
+                <div className="gradient-icon">
+                  <BookOpen className="w-6 h-6" />
+                </div>
                 Science Communication
               </h3>
               <div className="space-y-6">
@@ -86,15 +92,17 @@ const Teaching = () => {
             
             <Card className="glass border-primary/20 p-8 mb-8 section-glow">{/* Updated border */}
               <div className="flex items-start gap-6">
-                <div className="bg-primary/20 p-4 rounded-lg">
-                  <Heart className="w-8 h-8 text-primary" />
+                <div className="gradient-bg p-4 rounded-lg">
+                  <Heart className="w-8 h-8 text-white" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-4">Uplift Libraries Initiative</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <h4 className="font-semibold text-white mb-2 flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-primary" />
+                        <div className="gradient-icon">
+                          <MapPin className="w-4 h-4" />
+                        </div>
                         Current Impact
                       </h4>
                       <ul className="text-white/70 space-y-1">
@@ -106,7 +114,9 @@ const Teaching = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-2 flex items-center gap-2">
-                        <Target className="w-4 h-4 text-primary" />
+                        <div className="gradient-icon">
+                          <Target className="w-4 h-4" />
+                        </div>
                         Goals & Vision
                       </h4>
                       <ul className="text-white/70 space-y-1">
@@ -128,7 +138,9 @@ const Teaching = () => {
 
           {/* Call to Action */}
           <Card className="glass border-primary/20 p-8 text-center section-glow">{/* Updated border */}
-            <Calendar className="w-16 h-16 mx-auto mb-6 text-primary" />
+            <div className="gradient-icon w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+              <Calendar className="w-16 h-16" />
+            </div>
             <h2 className="text-3xl font-bold text-white mb-6">Join the Movement</h2>
             <p className="text-xl text-white/70 mb-8 leading-relaxed max-w-3xl mx-auto">
               Interested in collaborating on educational initiatives or supporting science activism? 
