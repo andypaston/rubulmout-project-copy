@@ -20,7 +20,7 @@ const Biography = () => {
 
           {/* Biography Content */}
           <div className="space-y-8">
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <GraduationCap className="w-6 h-6 text-primary" />
                 Academic Background
@@ -40,7 +40,7 @@ const Biography = () => {
               </div>
             </Card>
 
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <Briefcase className="w-6 h-6 text-primary" />
                 Research Expertise
@@ -70,7 +70,7 @@ const Biography = () => {
               </p>
             </Card>
 
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-primary" />
                 Community Impact

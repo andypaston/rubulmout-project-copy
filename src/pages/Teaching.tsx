@@ -19,7 +19,7 @@ const Teaching = () => {
           </div>
 
           {/* Teaching Philosophy */}
-          <Card className="glass border-white/10 p-8 mb-12">
+          <Card className="glass border-primary/20 p-8 mb-12 section-glow">{/* Updated border */}
             <div className="text-center">
               <Target className="w-16 h-16 mx-auto mb-6 text-primary" />
               <h2 className="text-3xl font-bold text-white mb-6">Teaching Philosophy</h2>
@@ -33,7 +33,7 @@ const Teaching = () => {
 
           {/* Teaching Experience */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <Users className="w-6 h-6 text-primary" />
                 Academic Teaching
@@ -56,7 +56,7 @@ const Teaching = () => {
               </div>
             </Card>
 
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <BookOpen className="w-6 h-6 text-primary" />
                 Science Communication
@@ -84,7 +84,7 @@ const Teaching = () => {
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-white mb-8 text-center">Science Activism Initiatives</h2>
             
-            <Card className="glass border-white/10 p-8 mb-8">
+            <Card className="glass border-primary/20 p-8 mb-8 section-glow">{/* Updated border */}
               <div className="flex items-start gap-6">
                 <div className="bg-primary/20 p-4 rounded-lg">
                   <Heart className="w-8 h-8 text-primary" />
@@ -127,7 +127,7 @@ const Teaching = () => {
           </div>
 
           {/* Call to Action */}
-          <Card className="glass border-white/10 p-8 text-center">
+          <Card className="glass border-primary/20 p-8 text-center section-glow">{/* Updated border */}
             <Calendar className="w-16 h-16 mx-auto mb-6 text-primary" />
             <h2 className="text-3xl font-bold text-white mb-6">Join the Movement</h2>
             <p className="text-xl text-white/70 mb-8 leading-relaxed max-w-3xl mx-auto">

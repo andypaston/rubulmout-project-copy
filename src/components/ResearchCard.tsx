@@ -9,7 +9,7 @@ interface ResearchCardProps {
 
 const ResearchCard = ({ title, description, image, gradientClass }: ResearchCardProps) => {
   return (
-    <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 animate-float">
+    <Card className="group relative overflow-hidden bg-card/80 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 section-glow">{/* Removed animate-float */}
       <div className="aspect-[4/3] overflow-hidden">
         <img
           src={image}
@@ -20,7 +20,7 @@ const ResearchCard = ({ title, description, image, gradientClass }: ResearchCard
       </div>
       
       <div className="absolute inset-0 flex flex-col justify-end p-6">
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-2 group-hover:gradient-text transition-all duration-300">
           {title}
         </h3>
         <p className="text-white/80 text-sm leading-relaxed">

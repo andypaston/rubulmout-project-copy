@@ -85,17 +85,17 @@ const Publications = () => {
 
           {/* Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <Card className="glass border-white/10 p-6 text-center">
+            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
               <BookOpen className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-3xl font-bold text-white mb-2">40+</h3>
               <p className="text-white/70">Research Articles</p>
             </Card>
-            <Card className="glass border-white/10 p-6 text-center">
+            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
               <Award className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-3xl font-bold text-white mb-2">2</h3>
               <p className="text-white/70">Bestselling Books</p>
             </Card>
-            <Card className="glass border-white/10 p-6 text-center">
+            <Card className="glass border-primary/20 p-6 text-center section-glow">{/* Updated border */}
               <Calendar className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-3xl font-bold text-white mb-2">50,000+</h3>
               <p className="text-white/70">Books Sold</p>
@@ -107,7 +107,7 @@ const Publications = () => {
             <h2 className="text-3xl font-bold text-white mb-8">Featured Publications</h2>
             
             {publications.map((pub, index) => (
-              <Card key={index} className="glass border-white/10 p-8 hover:border-white/20 transition-all duration-300">
+              <Card key={index} className="glass border-primary/20 p-8 hover:border-primary/40 transition-all duration-300 section-glow">{/* Updated border */}
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="flex-1">
                     <div className="flex items-start gap-4 mb-4">
@@ -162,7 +162,7 @@ const Publications = () => {
           </div>
 
           {/* Call to Action */}
-          <Card className="glass border-white/10 p-8 text-center mt-12">
+          <Card className="glass border-primary/20 p-8 text-center mt-12 section-glow">{/* Updated border */}
             <h2 className="text-3xl font-bold text-white mb-6">Research Collaborations</h2>
             <p className="text-xl text-white/70 mb-8 leading-relaxed max-w-3xl mx-auto">
               Interested in collaborating on research projects or discussing publication opportunities? 

@@ -23,7 +23,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="glass border-white/10 p-8">
+              <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
                 <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="glass border-white/10 p-8">
+              <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
                 <h2 className="text-2xl font-bold text-white mb-6">Social Media</h2>
                 <div className="flex gap-4">
                   <Button variant="hero-outline" size="icon">
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="glass border-white/10 p-8">
+              <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
                 <h2 className="text-2xl font-bold text-white mb-4">Research Interests</h2>
                 <p className="text-white/70 leading-relaxed">
                   I'm particularly interested in discussing:
@@ -91,7 +91,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="glass border-white/10 p-8">
+            <Card className="glass border-primary/20 p-8 section-glow">{/* Updated border */}
               <h2 className="text-2xl font-bold text-white mb-6">Send a Message</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -101,7 +101,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="firstName"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                      className="bg-black/30 border-primary/30 text-white placeholder:text-white/50 focus:border-primary"
                       placeholder="Your first name"
                     />
                   </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="lastName"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                      className="bg-black/30 border-primary/30 text-white placeholder:text-white/50 focus:border-primary"
                       placeholder="Your last name"
                     />
                   </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                   <Input
                     id="email"
                     type="email"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                    className="bg-black/30 border-primary/30 text-white placeholder:text-white/50 focus:border-primary"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                   </label>
                   <Input
                     id="subject"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                    className="bg-black/30 border-primary/30 text-white placeholder:text-white/50 focus:border-primary"
                     placeholder="Research collaboration opportunity"
                   />
                 </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     rows={6}
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 resize-none"
+                    className="bg-black/30 border-primary/30 text-white placeholder:text-white/50 resize-none focus:border-primary"
                     placeholder="Tell me about your research interests, collaboration ideas, or how we can work together..."
                   />
                 </div>

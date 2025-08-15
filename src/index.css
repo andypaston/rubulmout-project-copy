@@ -6,50 +6,53 @@
 
 @layer base {
   :root {
-    /* Dark scientific theme */
-    --background: 220 15% 8%;
+    /* Harvard themed dark design system */
+    --background: 220 25% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 220 15% 12%;
+    --card: 220 25% 8%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 15% 12%;
+    --popover: 220 25% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 340 75% 55%;
+    /* Harvard red for navigation only */
+    --harvard-red: 0 100% 25%;
+    
+    /* New gradient colors */
+    --primary: 320 100% 52%; /* #FF0F7B */
     --primary-foreground: 0 0% 98%;
+    --accent-gold: 45 84% 63%; /* #EDB753 */
+    --accent-yellow: 48 84% 63%; /* #EDD153 */
 
-    --secondary: 220 15% 15%;
+    --secondary: 220 25% 12%;
     --secondary-foreground: 0 0% 85%;
 
-    --muted: 220 15% 15%;
+    --muted: 220 25% 12%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 260 60% 65%;
+    --accent: 320 100% 52%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 340 75% 55%;
+    --border: 220 25% 15%;
+    --input: 220 25% 15%;
+    --ring: 320 100% 52%;
 
     --radius: 0.75rem;
 
-    /* Navigation specific */
-    --nav-background: 220 15% 8% / 0.9;
-    --nav-border: 220 15% 20% / 0.5;
+    /* Navigation specific - Harvard red */
+    --nav-background: 0 100% 25% / 0.95;
+    --nav-border: 0 100% 35% / 0.5;
 
-    /* Hero gradient colors */
-    --hero-gradient-start: 340 75% 55%;
-    --hero-gradient-middle: 260 60% 65%;
-    --hero-gradient-end: 200 80% 60%;
-
-    /* Research card gradients */
-    --card-gradient-1: 340 100% 50%;
-    --card-gradient-2: 260 80% 60%;
-    --card-gradient-3: 280 70% 65%;
+    /* Gradient definitions */
+    --gradient-primary: linear-gradient(135deg, #FF0F7B 0%, #EDB753 75%, #EDD153 100%);
+    --gradient-accent: linear-gradient(45deg, #FF0F7B 0%, #EDB753 100%);
+    
+    /* Glow effect */
+    --glow-primary: 0 0 30px #FF0F7B40;
   }
 }
 
@@ -62,41 +65,29 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
-  /* Custom animations */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(2deg); }
-  }
-
-  @keyframes glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
-    50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-glow {
-    animation: glow 3s ease-in-out infinite;
-  }
-
   /* Gradient text effects */
   .gradient-text {
-    background: linear-gradient(135deg, 
-      hsl(var(--hero-gradient-start)), 
-      hsl(var(--hero-gradient-middle)), 
-      hsl(var(--hero-gradient-end))
-    );
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Glass morphism effect */
+  /* Glass morphism effect with new colors */
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 15, 123, 0.2);
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Glow effects for sections */
+  .section-glow {
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Button glow effects */
+  .btn-glow {
+    box-shadow: 0 0 20px #FF0F7B60;
   }
 }
